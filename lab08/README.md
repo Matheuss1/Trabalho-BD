@@ -1,7 +1,7 @@
 # Equipe Invest Bank - INVB3
 * César Guedes Carneiro - 261031
-* `<nome completo>` - `<RA>`
-* `<nome completo>` - `<RA>`
+* Leonardo Rener de Oliveira - 201270
+* Matheus Silva de Deus - 241882
 
 ## Modelo Lógico Combinado do Banco de Dados de Grafos
 > Coloque aqui o modelo ou modelos que serão usados pela equipe combinando os individuais, conforme especificação.
