@@ -13,9 +13,8 @@
 > Liste aqui as perguntas de pesquisa/análise combinadas e revisadas dos membros da equipe e respectivas análises.
 >
 ### Pergunta/Análise 1
-> * Pergunta 1
->   
->   * Explicação sucinta da análise que será feita no grafo para atender à pergunta. Deve ser indicado explicitamente em qual das modalidades a análise se encaixa: centralidade; vulnerabilidade; comunidade/modularidade; motifs; predição de links.
+ * A qual país um índice pertence e quais outros índices pertencem a este mesmo país? 
+   * A partir de um nó Índice Econômico, se percorre a aresta Pertence para achar o nó País a qual aquele índice pertence. Então, se acham todos os outros nós Índice Econômico que o nó País encontrado Contém. Essa análise se encaixa na modalidade Comunidade, já que é possível determinar quais índices pertencem aos mesmos países.
 
 ### Pergunta/Análise 2
 > * Pergunta 2
