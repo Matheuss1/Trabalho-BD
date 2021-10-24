@@ -17,9 +17,8 @@
    * A partir de um nó Índice Econômico, se percorre a aresta Pertence para achar o nó País a qual aquele índice pertence. Então, se acham todos os outros nós Índice Econômico que o nó País encontrado Contém. Essa análise se encaixa na modalidade Comunidade, já que é possível determinar quais índices pertencem aos mesmos países.
 
 ### Pergunta/Análise 2
-> * Pergunta 2
->   
->   * Explicação sucinta da análise que será feita no grafo para atender à pergunta. Deve ser indicado explicitamente em qual das modalidades a análise se encaixa: centralidade; vulnerabilidade; comunidade/modularidade; motifs; predição de links.
+ * Qual a média de ganhos para os índices de um país durante um período e qual índice obteve melhor desempenho?   
+   * A partir do nó País se pode percorrer todos os Índices Econômicos pertencentes, do Índice Econômico se pode percorrer todas as data que fazem parte do período desejado, com isso é possível acessar a Pontuação Histórica, acessar a pontuação e assim calcular a média e verificar qual o Índice com maior pontuação no período. A pergunta se encaixa na modalidade Centralidade, pois é possível alcançar todas as Pontuações Históricas desejadas através do nó País.
 
 ### Pergunta/Análise 3
 * Ao longo dos anos, qual foi a faixa de valores de PIB mais alcançada pelos países?
