@@ -1,3 +1,5 @@
+**Projeto Parcial entregue na data 01/10/2021 e movido para esta pasta na data 23/10/2021**
+
 # Projeto <em>Índices econômicos mundiais</em>
 # Equipe <em>Invest Bank - INVB3</em>
 - Leonardo Rener de Oliveira - 201270
