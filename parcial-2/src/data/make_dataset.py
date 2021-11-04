@@ -28,6 +28,8 @@ def main():
 
     datasetManager.saveCountries()
 
+    datasetManager.saveIndices()
+
 
 if __name__ == "__main__":
     main()

@@ -9,11 +9,10 @@ class InvestAPI:
             "indices": self.api.indices
         }
 
-
     def get_feature(self, feature):
         try:
             requestedFeature = self.features[feature]
 
             return requestedFeature
-        except:
+        except KeyError:
             raise KeyError(f"API has no feature named {feature}")
