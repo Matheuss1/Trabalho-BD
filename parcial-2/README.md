@@ -26,9 +26,14 @@ Esperamos que com o projeto aqui apresentado, sejam possíveis aplicações de a
 
 > Exemplo de modelo lógico relacional
 ~~~
-PESSOA(_Código_, Nome, Telefone)
-ARMÁRIO(_Código_, Tamanho, Ocupante)
-  Ocupante chave estrangeira -> PESSOA(Código)
+País(nome_país)
+PIB(país, ano, valor)
+    CHE: país para País
+Índice_Econômico(nome_índice, moeda)
+Pertence(país, índice)
+    CHE: país para País e índice para Índice_Econômico
+Histórico_de_preços(índice, ano, mês, pontos_abertura,  pontos_fechamento)
+    CHE: indíce para Índice_Econômico
 ~~~
 
 > Para o modelo de grafos de propriedades, utilize este
@@ -50,7 +55,7 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 > Para modelos hierárquicos (XML e JSON), utilize um formato
 > conforme o abaixo:
 
-> ![Modelo Lógico Hierárquico](images/modelo-logico-hierarquico.png)
+![Modelo Documentos](assets/knowledge-graph.png)
 
 ## Dataset Preliminar a ser Publicado
 > Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
