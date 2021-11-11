@@ -18,7 +18,7 @@ Esperamos que com o projeto aqui apresentado, sejam possíveis aplicações de a
 ## Modelo Conceitual Preliminar
 
 > Coloque aqui a imagem do modelo conceitual preliminar em ER ou UML, como o exemplo a seguir:
-> ![ER Taxi](images/er-taxi.png)
+> ![Modelo Conceitual](assets/modelo_conceitual.png)
 
 ## Modelos Lógicos Preliminares
 
