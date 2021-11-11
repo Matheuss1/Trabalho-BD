@@ -1,5 +1,6 @@
 from fileManager import FileManager
 import pandas as pd
+import os
 import sys
 sys.path.append(".")
 
@@ -62,15 +63,57 @@ class DatasetManager:
             self.__get_country_indices_relation_table(major_world_indices)
         )
 
+        from_year, to_year = (
+            self.__get_initial_and_final_year_of_historical_data(
+                from_date, to_date
+            )
+        )
+
         for index, row in country_indices_relation_table_df.iterrows():
-            if index == 0:
-                print(self.__manager.get_index_historical_data(
+            try:
+                historical_data_df = self.__manager.get_index_historical_data(
                     index=row['indice_name'],
                     country=row['country'],
                     from_date=from_date,
                     to_date=to_date,
                     interval=interval
-                ))
+                )
+                self.__create_indice_historical_data_folders_by_year(
+                    row['indice_name'],
+                    from_year,
+                    to_year
+                )
+
+                for year in range(from_year, to_year + 1):
+                    pass
+            except Exception:
+                continue
+
+    def __create_indice_historical_data_folders_by_year(
+        self,
+        indice_name,
+        from_year,
+        to_year
+    ):
+        for year in range(from_year, to_year + 1):
+            try:
+                os.makedirs(
+                    self.__get_absolute_saving_path(
+                        f'indices-historical-data/{indice_name}/{year}'
+                    )
+                )
+            except FileExistsError:
+                continue
+
+    def __get_initial_and_final_year_of_historical_data(
+        self,
+        from_date,
+        to_date
+    ):
+        from_year = int(from_date.split('/')[2])
+        to_year = int(to_date.split('/')[2])
+
+        return from_year, to_year
 
     def __get_major_world_indices(self):
         listed_indices_pd_dataframe = self.__manager.get_indices()

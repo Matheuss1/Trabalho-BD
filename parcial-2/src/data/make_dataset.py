@@ -5,7 +5,7 @@ from fileManager import FileManager
 from datasetManager import DatasetManager
 
 # You can implement a custom api class that uses the same interfaces as the
-#  library originally used in this project, that is the "investpy".
+# library originally used in this project, that is the "investpy".
 # Nonetheless, you can implemente another interfaces, since you change
 # parts of this source code as needed for your goals.
 investAPI = InvestAPI(investpy)
