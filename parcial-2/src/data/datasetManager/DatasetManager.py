@@ -1,4 +1,5 @@
 from fileManager import FileManager
+import traceback
 import pandas as pd
 import os
 import sys
@@ -70,40 +71,86 @@ class DatasetManager:
         )
 
         for index, row in country_indices_relation_table_df.iterrows():
+            indice_name = row['indice_name']
+
+            if (self.__indice_historical_data_already_exists(indice_name)):
+                continue
+
             try:
                 historical_data_df = self.__manager.get_index_historical_data(
-                    index=row['indice_name'],
+                    index=indice_name,
                     country=row['country'],
                     from_date=from_date,
                     to_date=to_date,
                     interval=interval
                 )
-                self.__create_indice_historical_data_folders_by_year(
-                    row['indice_name'],
-                    from_year,
-                    to_year
+
+                self.__create_indice_historical_data_folders_by_indice(
+                    indice_name
                 )
 
-                for year in range(from_year, to_year + 1):
-                    pass
-            except Exception:
-                continue
+                self.__save_indice_historical_data(
+                    from_year, to_year, historical_data_df, indice_name
+                )
 
-    def __create_indice_historical_data_folders_by_year(
+            except Exception:
+                traceback.print_exc()
+
+    def __save_indice_historical_data(
         self,
-        indice_name,
         from_year,
-        to_year
+        to_year,
+        historical_data_df,
+        indice_name
     ):
         for year in range(from_year, to_year + 1):
-            try:
-                os.makedirs(
-                    self.__get_absolute_saving_path(
-                        f'indices-historical-data/{indice_name}/{year}'
-                    )
+            partial_historical_data = historical_data_df.loc[
+                historical_data_df.index.year == year
+            ]
+
+            partial_historical_data.index.name = 'Month'
+
+            partial_historical_data_index_series = (
+                partial_historical_data.index
+            )
+
+            partial_historical_data = partial_historical_data.set_index(
+                partial_historical_data_index_series.month
+            )
+
+            partial_historical_data = partial_historical_data.filter(
+                items=['Open', 'Close']
+            )
+
+            folder_saving_path = self.__get_absolute_saving_path(
+                "indices-historical-data/" +
+                f"{indice_name.replace(' ', '_').replace('/', '-')}" +
+                f"/{year}.csv"
+            )
+
+            partial_historical_data.to_csv(folder_saving_path, sep=',')
+
+    def __indice_historical_data_already_exists(self, indice_name):
+        path = self.__get_absolute_saving_path(
+            "indices-historical-data/" +
+            indice_name.replace(' ', '_').replace('/', '-') + '/'
+        )
+
+        return os.path.exists(path)
+
+    def __create_indice_historical_data_folders_by_indice(
+        self,
+        indice_name,
+    ):
+        try:
+            os.mkdir(
+                self.__get_absolute_saving_path(
+                    "indices-historical-data/" +
+                    indice_name.replace(' ', '_').replace('/', '-') + '/'
                 )
-            except FileExistsError:
-                continue
+            )
+        except FileExistsError:
+            pass
 
     def __get_initial_and_final_year_of_historical_data(
         self,
@@ -144,13 +191,13 @@ class DatasetManager:
 
         return indices_df.loc[rows_selection_condition]
 
-    def __get_raw_data_saving_path(self):
+    def __get_processed_data_saving_path(self):
         working_directory = self.file_manager.get_working_directory()
 
-        return f"{working_directory}/raw"
+        return f"{working_directory}/processed"
 
     def __get_absolute_saving_path(self, path):
         return self.file_manager.path_join(
-            self.__get_raw_data_saving_path(),
+            self.__get_processed_data_saving_path(),
             path
         )
