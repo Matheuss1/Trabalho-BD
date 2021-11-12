@@ -20,40 +20,20 @@ Esperamos que com o projeto aqui apresentado, sejam possíveis aplicações de a
 
 ## Modelos Lógicos Preliminares
 
-> Coloque aqui os primeiros modelos lógicos dos bancos de dados relacionados aos modelos conceituais. Para o modelo relacional, sugere-se o formato a seguir. Para outros modelos lógicos o formato é livre, pode ser adotado aqueles apresentados em sala.
-
-> Exemplo de modelo lógico relacional
+### Modelos Relacional
 ~~~
-País(nome_país)
-PIB(país, ano, valor)
-    CHE: país para País
-Índice_Econômico(nome_índice, moeda)
-Pertence(país, índice)
-    CHE: país para País e índice para Índice_Econômico
-Histórico_de_preços(índice, ano, mês, pontos_abertura,  pontos_fechamento)
+País(_nome_)
+PIB(_país_, _ano_, valor)
+    país chave estrangeira -> País(nome)
+Índice_Econômico(_nome_, moeda)
+Pertence(_país_, _índice_)
+    país chave estrangeira -> País(nome) e índice chave estrangeira -> Índice(nome)
+Histórico_de_preços(_índice_, _ano_, _mês_, pontosAbertura,  pontosFechamento)
     CHE: indíce para Índice_Econômico
 ~~~
 
-> Para o modelo de grafos de propriedades, utilize este
-> [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
->
-> ![Modelo Lógico de Grafos](images/modelo-logico-grafos.png)
-
-> Para o modelo de grafos de conhecimento, utilize a abordagem
-> (recurso, propriedade, valor) para apresentar seu grafo exemplo.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image).
->
-> Você pode usar um grafo ilustrando as classes, como este:
-> ![Modelo Lógico de Grafos de Conhecimento](images/grafo-conhecimento-classes.png)
->
-> Além de outro com exemplo de instâncias, como este:
-> ![Modelo Lógico de Grafos](images/grafo-conhecimento-exemplo.png)
-
-> Para modelos hierárquicos (XML e JSON), utilize um formato
-> conforme o abaixo:
-
-![Modelo Documentos](assets/knowledge-graph.png)
+### Modelos Hierárquicos (XML e JSON)
+![Modelo Documentos](assets/modelo_documentos.png)
 
 ## Dataset Preliminar a ser Publicado
 > Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
