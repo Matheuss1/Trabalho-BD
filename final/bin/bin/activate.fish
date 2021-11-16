@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/matheus/Documents/facul/mc536/Trabalho-BD/parcial-2/bin"
+set -gx VIRTUAL_ENV "/home/matheus/Documents/facul/mc536/Trabalho-BD/final/bin"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

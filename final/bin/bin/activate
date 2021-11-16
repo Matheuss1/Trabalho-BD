@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/matheus/Documents/facul/mc536/Trabalho-BD/parcial-2/bin"
+VIRTUAL_ENV="/home/matheus/Documents/facul/mc536/Trabalho-BD/final/bin"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
