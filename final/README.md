@@ -61,31 +61,56 @@ título da base | link | breve descrição
 * tratamento de dados
 * transformação de dados para facilitar análise e pesquisa
 
-> Se for notebook, ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as operações envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+## Evolução do Projeto
+> Relatório de evolução, descrevendo as evoluções na modelagem do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas, modelos e recortes de mudanças são bem-vindos.
+> Podem ser apresentados destaques na evolução dos modelos conceitual e lógico. O modelo inicial e intermediários (quando relevantes) e explicação de refinamentos, mudanças ou evolução do projeto que fundamentaram as decisões.
+> Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
-> Liste aqui as perguntas de pesquisa/análise e respectivas análises.
-> Nem todas as perguntas precisam de queries que as implementam.
-> É possível haver perguntas em que a solução é apenas descrita para
-> demonstrar o potencial da base.
+> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
+
+> Liste aqui as perguntas de pesquisa/análise e respectivas análises. Nem todas as perguntas precisam de queries que as implementam. É possível haver perguntas em que a solução é apenas descrita para demonstrar o potencial da base. Abaixo são ilustradas três perguntas, mas pode ser um número maior a critério da equipe.
 >
-### Pergunta/Análise 1
+### Perguntas/Análise com Resposta Implementada
+
+> As respostas às perguntas podem devem ser ilustradas da forma mais rica possível com tabelas resultantes, grafos ou gráficos que apresentam os resultados. Os resultados podem ser analisados e comentados. Veja um exemplo de figura ilustrando uma comunidade detectada no Cytoscape:
+
+> ![Comunidade no Cytoscape](images/cytoscape-comunidade.png)
+
+#### Pergunta/Análise 1
 > * Pergunta 1
 >   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
+>   * Explicação sucinta da análise que será feita e conjunto de queries que
 >     responde à pergunta.
 
-### Pergunta/Análise 2
+#### Pergunta/Análise 2
 > * Pergunta 2
 >   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
+>   * Explicação sucinta da análise que será feita e conjunto de queries que
 >     responde à pergunta.
 
-### Pergunta/Análise 3
+#### Pergunta/Análise 3
 > * Pergunta 3
 >   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
+>   * Explicação sucinta da análise que será feita e conjunto de queries que
 >     responde à pergunta.
+
+### Perguntas/Análise Propostas mas Não Implementadas
+
+#### Pergunta/Análise 1
+> * Pergunta 1
+>   
+>   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
+
+#### Pergunta/Análise 2
+> * Pergunta 2
+>   
+>   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
+
+#### Pergunta/Análise 3
+> * Pergunta 3
+>   
+>   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
 
 > Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
