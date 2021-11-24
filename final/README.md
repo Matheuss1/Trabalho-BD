@@ -111,10 +111,13 @@ Porém, conforme o grupo entendeu melhor como diferenciar os dois modelos lógic
 > ![Comunidade no Cytoscape](images/cytoscape-comunidade.png)
 
 #### Pergunta/Análise 1
-> * Pergunta 1
->   
->   * Explicação sucinta da análise que será feita e conjunto de queries que
->     responde à pergunta.
+> * Qual a previsão do GDP de um pais com base nos valores de abertura e fechamento do índice econômico do mês de um determinado mês?
+>   ![Query No Orange](assets/orange_query.png)
+
+>   * Para realizar essa pergunta foi necessário primeiramente separar um dados do índice pais desejado, depois juntados com os dados do GDP do pais, então foi realizado um processamento nos dados para normalizá-los, aplicando então o modelo de regressão linear na predição, obtemos as saídas esperadas para o GDP. Para o teste foi escolhido o pais Brasil, com dados de base de 2015 a 2019, deixando o ano de 2020 vazio propositalmente para comparar o resultado gerado com o valor real. Obtivemos um GDP de 7544245, e o valor real é de 7447858, se mostrando uma aproximação razoavelmente boa.
+
+>   ![Resultado Esperado Orange](assets/orange_esperado.png)
+>   ![Resultado Obtido Orange](assets/orange_obtido.png)
 
 #### Pergunta/Análise 2
 > * Pergunta 2
