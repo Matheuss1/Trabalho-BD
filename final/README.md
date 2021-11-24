@@ -82,9 +82,7 @@ Porém, conforme o grupo entendeu melhor como diferenciar os dois modelos lógic
 >
 ### Perguntas/Análise com Resposta Implementada
 
-> As respostas às perguntas podem devem ser ilustradas da forma mais rica possível com tabelas resultantes, grafos ou gráficos que apresentam os resultados. Os resultados podem ser analisados e comentados. Veja um exemplo de figura ilustrando uma comunidade detectada no Cytoscape:
-
-> ![Comunidade no Cytoscape](images/cytoscape-comunidade.png)
+As Perguntas/Análises 1 e 2 foram feitas utilizando o mesmo [notebook](notebooks/Mongodb.ipynb) em python usando a biblioteca [Pymongo](https://pymongo.readthedocs.io/en/stable/).
 
 #### Pergunta/Análise 1
 * Qual a média histórica (2015-2020) para o PIB de todos os países ?
@@ -107,6 +105,12 @@ print(som)
 ~~~
 
 #### Pergunta/Análise 2
+> * Pergunta 2
+>   
+>   * Explicação sucinta da análise que será feita e conjunto de queries que
+>     responde à pergunta.
+
+#### Pergunta/Análise 3
 * Qual a previsão do GDP de um pais com base nos valores de abertura e fechamento do índice econômico do mês de um determinado mês?
   ![Query No Orange](assets/orange_query.png)
 
@@ -116,8 +120,8 @@ print(som)
   * Resultado esperado: ![Resultado Esperado Orange](assets/orange_esperado.png)
   * Resultado obtido: ![Resultado Obtido Orange](assets/orange_obtido.png)
 
-#### Pergunta/Análise 3
-> * Pergunta 3
+#### Pergunta/Análise 4
+> * Pergunta 4
 >   
 >   * Explicação sucinta da análise que será feita e conjunto de queries que
 >     responde à pergunta.
