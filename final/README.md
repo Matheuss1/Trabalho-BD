@@ -82,7 +82,7 @@ Porém, conforme o grupo entendeu melhor como diferenciar os dois modelos lógic
 >
 ### Perguntas/Análise com Resposta Implementada
 
-As Perguntas/Análises 1 e 2 foram feitas utilizando o mesmo [notebook](notebooks/Mongodb.ipynb) em python usando a biblioteca [Pymongo](https://pymongo.readthedocs.io/en/stable/).
+As Perguntas/Análises 1 e 2 foram feitas utilizando o mesmo [notebook](notebooks/Mongodb.ipynb) em python usando a biblioteca [PyMongo](https://pymongo.readthedocs.io/en/stable/).
 
 #### Pergunta/Análise 1
 * Qual a média histórica (2015-2020) para o PIB de todos os países ?
