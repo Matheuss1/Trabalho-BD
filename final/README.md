@@ -50,7 +50,7 @@ título do arquivo/base | link | breve descrição
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`<título da base>` | `<link para a página da base>` | `<breve descrição da base>`
+`<IMF - Gross Domestic Product>` | `<https://data.imf.org/regular.aspx?key=63122827>` | `<Base de dados da International Monetary Fund, contendo o PIB de todos os paises>`
 
 ## Detalhamento do Projeto
 > Apresente aqui detalhes do processo de construção do dataset e análise. Nesta seção ou na seção de Perguntas podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
