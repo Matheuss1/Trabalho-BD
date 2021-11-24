@@ -45,7 +45,7 @@ latvia,2015,24572.13
 lebanon,2015,75283607.56
 lithuania,2015,37345.70
 luxembourg,2015,54142.30
-malawi,2015,null
+malawi,2015,
 malaysia,2015,1176941.00
 malta,2015,9996.71
 mauritius,2015,409893.00
@@ -60,7 +60,7 @@ nigeria,2015,95177735.90
 norway,2015,3111168.00
 oman,2015,26307.59
 pakistan,2015,27443022.50
-palestinian territory,2015,null
+palestinian territory,2015,
 peru,2015,609364.00
 philippines,2015,13944157.45
 poland,2015,1801112.00
@@ -80,7 +80,7 @@ spain,2015,1077590.00
 sri lanka,2015,10950621.00
 sweden,2015,4260470.00
 switzerland,2015,675735.65
-taiwan,2015,null
+taiwan,2015,
 tanzania,2015,94349315.56
 thailand,2015,13743463.00
 tunisia,2015,84689.20
@@ -90,9 +90,9 @@ ukraine,2015,1988544.00
 united arab emirates,2015,1315250.58
 united kingdom,2015,1935212.00
 united states,2015,18238301.00
-venezuela,2015,null
+venezuela,2015,
 vietnam,2015,4192862308.95
-world,2015,null
+world,2015,
 zambia,2015,183381.07
 zimbabwe,2015,19963.00
 euro zone,2015,10522115.64
@@ -142,7 +142,7 @@ latvia,2016,25371.32
 lebanon,2016,77191722.17
 lithuania,2016,38889.86
 luxembourg,2016,56208.07
-malawi,2016,null
+malawi,2016,
 malaysia,2016,1249697.00
 malta,2016,10566.54
 mauritius,2016,434765.00
@@ -157,7 +157,7 @@ nigeria,2016,102575419.20
 norway,2016,3098148.00
 oman,2016,25162.17
 pakistan,2016,29075633.00
-palestinian territory,2016,null
+palestinian territory,2016,
 peru,2016,656161.00
 philippines,2016,15132381.47
 poland,2016,1863487.00
@@ -177,7 +177,7 @@ spain,2016,1113840.00
 sri lanka,2016,11996084.00
 sweden,2016,4415031.00
 switzerland,2016,685440.98
-taiwan,2016,null
+taiwan,2016,
 tanzania,2016,108362324.29
 thailand,2016,14592595.00
 tunisia,2016,89789.16
@@ -187,9 +187,9 @@ ukraine,2016,2385367.00
 united arab emirates,2016,1311248.34
 united kingdom,2016,2016638.00
 united states,2016,18745075.50
-venezuela,2016,null
+venezuela,2016,
 vietnam,2016,4502732989.47
-world,2016,null
+world,2016,
 zambia,2016,216098.06
 zimbabwe,2016,20805.75
 euro zone,2016,10816256.66
@@ -254,7 +254,7 @@ nigeria,2017,114899250.90
 norway,2017,3295382.00
 oman,2017,27140.17
 pakistan,2017,31922302.90
-palestinian territory,2017,null
+palestinian territory,2017,
 peru,2017,698311.00
 philippines,2017,16556651.08
 poland,2017,1989835.00
@@ -274,7 +274,7 @@ spain,2017,1161867.00
 sri lanka,2017,13328103.00
 sweden,2017,4625094.00
 switzerland,2017,693694.13
-taiwan,2017,null
+taiwan,2017,
 tanzania,2017,118744498.44
 thailand,2017,15486551.00
 tunisia,2017,96298.30
@@ -284,9 +284,9 @@ ukraine,2017,2983882.00
 united arab emirates,2017,1416136.22
 united kingdom,2017,2097143.00
 united states,2017,19542979.50
-venezuela,2017,null
+venezuela,2017,
 vietnam,2017,5005975487.43
-world,2017,null
+world,2017,
 zambia,2017,246251.78
 zimbabwe,2017,27437.99
 euro zone,2017,11222418.56
@@ -351,7 +351,7 @@ nigeria,2018,129086908.20
 norway,2018,3553900.00
 oman,2018,30678.78
 pakistan,2018,34616302.00
-palestinian territory,2018,null
+palestinian territory,2018,
 peru,2018,740420.00
 philippines,2018,18265190.26
 poland,2018,2121555.00
@@ -371,7 +371,7 @@ spain,2018,1203259.00
 sri lanka,2018,14366105.00
 sweden,2018,4828306.00
 switzerland,2018,719271.62
-taiwan,2018,null
+taiwan,2018,
 tanzania,2018,129043901.31
 thailand,2018,16365572.00
 tunisia,2018,105268.48
@@ -381,9 +381,9 @@ ukraine,2018,3558706.00
 united arab emirates,2018,1550584.75
 united kingdom,2018,2174380.00
 united states,2018,20611861.00
-venezuela,2018,null
+venezuela,2018,
 vietnam,2018,5542331870.41
-world,2018,null
+world,2018,
 zambia,2018,282423.49
 zimbabwe,2018,42468.17
 euro zone,2018,11600243.89
@@ -448,7 +448,7 @@ nigeria,2019,145639140.30
 norway,2019,3568488.00
 oman,2019,29349.47
 pakistan,2019,37972310.00
-palestinian territory,2019,null
+palestinian territory,2019,
 peru,2019,769963.00
 philippines,2019,19516418.27
 poland,2019,2293199.00
@@ -468,7 +468,7 @@ spain,2019,1244375.00
 sri lanka,2019,15016142.00
 sweden,2019,5049619.00
 switzerland,2019,727212.15
-taiwan,2019,null
+taiwan,2019,
 tanzania,2019,139893804.13
 thailand,2019,16875891.00
 tunisia,2019,113848.41
@@ -478,17 +478,17 @@ ukraine,2019,3977198.00
 united arab emirates,2019,1546644.98
 united kingdom,2019,2255283.00
 united states,2019,21433226.30
-venezuela,2019,null
+venezuela,2019,
 vietnam,2019,6037347630.70
-world,2019,null
+world,2019,
 zambia,2019,311353.34
 zimbabwe,2019,159390.66
 euro zone,2019,11982723.26
 argentina,2020,27481440.00
 australia,2020,1971788.00
 austria,2020,379320.56
-bahrain,2020,null
-bangladesh,2020,null
+bahrain,2020,
+bangladesh,2020,
 belgium,2020,456892.90
 bosnia,2020,34240.16
 botswana,2020,172552.40
@@ -497,15 +497,15 @@ bulgaria,2020,119951.09
 canada,2020,2204905.00
 chile,2020,200512436.20
 china,2020,2688536.00
-colombia,2020,null
+colombia,2020,
 costa rica,2020,36174304.60
-ivory coast,2020,null
+ivory coast,2020,
 croatia,2020,378349.00
 cyprus,2020,21548.37
 czech republic,2020,5694623.00
 denmark,2020,2329561.40
-ecuador,2020,null
-egypt,2020,null
+ecuador,2020,
+egypt,2020,
 estonia,2020,26834.52
 finland,2020,236169.00
 france,2020,2302860.00
@@ -514,70 +514,70 @@ greece,2020,165326.43
 hong kong,2020,2688536.00
 hungary,2020,47988479.00
 iceland,2020,2941098.99
-india,2020,null
+india,2020,
 indonesia,2020,15434151800.00
-iraq,2020,null
+iraq,2020,
 ireland,2020,372868.50
 israel,2020,1401406.40
 italy,2020,1653577.20
-jamaica,2020,null
+jamaica,2020,
 japan,2020,538697400.00
-jordan,2020,null
-kazakhstan,2020,null
-kenya,2020,null
-kuwait,2020,null
+jordan,2020,
+kazakhstan,2020,
+kenya,2020,
+kuwait,2020,
 latvia,2020,29510.98
-lebanon,2020,null
+lebanon,2020,
 lithuania,2020,49507.22
 luxembourg,2020,64221.14
-malawi,2020,null
-malaysia,2020,null
+malawi,2020,
+malaysia,2020,
 malta,2020,13054.93
-mauritius,2020,null
+mauritius,2020,
 mexico,2020,23073727.00
-mongolia,2020,null
+mongolia,2020,
 montenegro,2020,4185.55
-morocco,2020,null
+morocco,2020,
 namibia,2020,176327.30
 netherlands,2020,800095.00
 new zealand,2020,322118.00
-nigeria,2020,null
+nigeria,2020,
 norway,2020,3413450.00
-oman,2020,null
-pakistan,2020,null
-palestinian territory,2020,null
-peru,2020,null
-philippines,2020,null
+oman,2020,
+pakistan,2020,
+palestinian territory,2020,
+peru,2020,
+philippines,2020,
 poland,2020,2326656.00
 portugal,2020,200087.57
 qatar,2020,525657.36
 romania,2020,1055548.80
-russia,2020,null
+russia,2020,
 rwanda,2020,9746000.00
 saudi arabia,2020,2625442.00
 serbia,2020,5502216.27
-singapore,2020,null
+singapore,2020,
 slovakia,2020,92079.25
 slovenia,2020,46918.05
 south africa,2020,5521075.10
 south korea,2020,1933152400.00
 spain,2020,1121948.00
-sri lanka,2020,null
+sri lanka,2020,
 sweden,2020,4983363.00
 switzerland,2020,706241.81
-taiwan,2020,null
-tanzania,2020,null
+taiwan,2020,
+tanzania,2020,
 thailand,2020,15606463.00
-tunisia,2020,null
+tunisia,2020,
 turkey,2020,5046883.31
-uganda,2020,null
+uganda,2020,
 ukraine,2020,4191864.00
-united arab emirates,2020,null
+united arab emirates,2020,
 united kingdom,2020,2156073.00
 united states,2020,20936559.00
-venezuela,2020,null
+venezuela,2020,
 vietnam,2020,6293144896.28
-world,2020,null
-zambia,2020,null
-zimbabwe,2020,null
+world,2020,
+zambia,2020,
+zimbabwe,2020,
 euro zone,2020,11400379.61
