@@ -33,7 +33,7 @@ Histórico_de_preços(_índice_, _ano_, _mês_, pontosAbertura,  pontosFechament
 ~~~
 
 ### Modelos Hierárquicos (XML e JSON)
-![Modelo Documentos](assets/modelo_documentos.png)
+![Modelo Documentos](assets/modelo_documentos_novo.png)
 
 ## Dataset Preliminar a ser Publicado
 > Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
