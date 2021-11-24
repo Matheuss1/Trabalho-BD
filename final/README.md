@@ -36,21 +36,19 @@ Histórico_de_preços(_índice_, _ano_, _mês_, pontosAbertura,  pontosFechament
 ![Modelo Documentos](assets/modelo_documentos_novo.png)
 
 ## Dataset Preliminar a ser Publicado
-> Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
 
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
 `<título do arquivo/base>` | `<link para arquivo/base>` | `<breve descrição do arquivo/base>`
 
-> Os arquivos finais do dataset publicado devem ser colocados na pasta `data`, em subpasta `processed`. Outros arquivos serão colocados em subpastas conforme seu papel (externo, interim, raw). A diferença entre externo e raw é que o raw é em formato não adaptado para uso. A pasta `raw` é opcional, pois pode ser substituída pelo link para a base original da seção anterior.
-> Coloque arquivos que não estejam disponíveis online e sejam acessados pelo notebook. Relacionais (usualmente CSV), XML, JSON e CSV ou triplas para grafos.
 
 ## Bases de Dados
 > Elencar as bases de dados fonte utilizadas no projeto.
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`<IMF - Gross Domestic Product>` | `<https://data.imf.org/regular.aspx?key=63122827>` | `<Base de dados da International Monetary Fund, contendo o PIB de todos os paises>`
+`<IMF - Gross Domestic Product>` | `https://data.imf.org/regular.aspx?key=63122827` | `Base de dados da International Monetary Fund, contendo o PIB de todos os paises`
+`Wolrd indices` | `https://www.investing.com/indices/world-indices` | `Base de dados com as mais variadas informações econômicas sobre países`
 
 ## Detalhamento do Projeto
 
@@ -76,53 +74,31 @@ Porém, conforme o grupo entendeu melhor como diferenciar os dois modelos lógic
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
-> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
-
-> Liste aqui as perguntas de pesquisa/análise e respectivas análises. Nem todas as perguntas precisam de queries que as implementam. É possível haver perguntas em que a solução é apenas descrita para demonstrar o potencial da base. Abaixo são ilustradas três perguntas, mas pode ser um número maior a critério da equipe.
->
 ### Perguntas/Análise com Resposta Implementada
 
-> As respostas às perguntas podem devem ser ilustradas da forma mais rica possível com tabelas resultantes, grafos ou gráficos que apresentam os resultados. Os resultados podem ser analisados e comentados. Veja um exemplo de figura ilustrando uma comunidade detectada no Cytoscape:
-
-> ![Comunidade no Cytoscape](images/cytoscape-comunidade.png)
-
 #### Pergunta/Análise 1
-> * Qual a previsão do GDP de um pais com base nos valores de abertura e fechamento do índice econômico do mês de um determinado mês?
+* Qual a previsão do GDP de um pais com base nos valores de abertura e fechamento do índice econômico do mês de um determinado mês?
 >   ![Query No Orange](assets/orange_query.png)
 
->    Para realizar essa pergunta foi necessário primeiramente separar um dados do índice pais desejado, depois juntados com os dados do GDP do pais, então foi realizado um processamento nos dados para normalizá-los, aplicando então o modelo de regressão linear na predição, obtemos as saídas esperadas para o GDP. Para o teste foi escolhido o pais Brasil, com dados de base de 2015 a 2019, deixando o ano de 2020 vazio propositalmente para comparar o resultado gerado com o valor real. Obtivemos um GDP de 7544245, e o valor real é de 7447858, se mostrando uma aproximação razoavelmente boa.
+ Para realizar essa pergunta foi necessário primeiramente separar os dados do índice de um país desejado, depois juntá-los com os dados do GDP de tal país. Após isso, foi realizado um processamento em tais dados, para normalizá-los. Aplicando então o modelo de regressão linear na predição, obtemos as saídas esperadas para o GDP. Para o teste foi escolhido o pais Brasil, com dados de base de 2015 a 2019, deixando o ano de 2020 vazio propositalmente para comparar o resultado gerado com o valor real. Obtivemos um GDP de 7544245, e o valor real é de 7447858, se mostrando uma aproximação razoavelmente boa.
 >   [Orange Workflow](notebooks/orange_workflow.ows)
 
 >   * Resultado esperado: ![Resultado Esperado Orange](assets/orange_esperado.png)
 >   * Resultado obtido: ![Resultado Obtido Orange](assets/orange_obtido.png)
 
 #### Pergunta/Análise 2
-> * Pergunta 2
->   
->   * Explicação sucinta da análise que será feita e conjunto de queries que
->     responde à pergunta.
+* Qual foi o indíce com maior variação em sua pontuação histórica, no período de 1 mês, de 2015 a 2020? E a qual país tal índice pertence?
+
+Tal pergunta foi desenvolvida com o intuito de analisar o potencial de queries SQL em um banco de dados relacional criado a partir dos dados disponibilizados por este dataset. A resposta foi obtida de acordo com a figura a seguir:
+
+> ![Resultado consulta SQL](assets/querySql.png)
+
+Você pode encontrar o código de criação e manipulação do banco de dados SQL neste [notebook](notebooks/Consultas_Dataset.ipynb)
 
 #### Pergunta/Análise 3
 > * Pergunta 3
 >   
 >   * Explicação sucinta da análise que será feita e conjunto de queries que
 >     responde à pergunta.
-
-### Perguntas/Análise Propostas mas Não Implementadas
-
-#### Pergunta/Análise 1
-> * Pergunta 1
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
-
-#### Pergunta/Análise 2
-> * Pergunta 2
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
-
-#### Pergunta/Análise 3
-> * Pergunta 3
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
 
 > Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
