@@ -13,7 +13,9 @@ Nossa motivação é disponibilizar estes dados de maneira acessível, gratuita 
 Esperamos que com o projeto aqui apresentado, sejam possíveis aplicações de análises estatísticas sobre os dados, de forma a responder perguntas do tipo: Qual foi a evolução de determinado indíce em certo período de tempo? Como ele se compara com outros índices? Qual sua relação com o desenvolvimento econômico de determinado país? Dentre muitas outras perguntas que possam ser consideradas, limitadas apenas pela criatividade de quem estiver a manipular tais informações históricas.
 
 ## Slides da Apresentação
-[Slides](assets/slides/apresentacao_previa.pdf)
+`Commit fora do prazo para atualizar o link do slide, como explicado na aula do dia 24/11`
+
+[Slides](assets/slides/Apresentacao_final.pdf)
 
 ## Modelo Conceitual
 ![Modelo Conceitual](assets/modelo_conceitual.png)
