@@ -31,11 +31,11 @@ def main():
     indicesManager = investAPI.get_feature("indices")
     datasetManager = DatasetManager(indicesManager)
 
-    # datasetManager.save_countries()
+    datasetManager.save_countries()
 
-    # datasetManager.save_indices()
+    datasetManager.save_indices()
 
-    # datasetManager.save_country_indices_relation()
+    datasetManager.save_country_indices_relation()
 
     datasetManager.save_indices_historical_data(
         HISTORICAL_DATA_FROM_DATE,
