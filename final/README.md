@@ -50,14 +50,19 @@ título da base | link | breve descrição
 
 ## Detalhamento do Projeto
 
-* extração de dados:
+* Extração de dados:
     A extração dos dados foi feita em sua maior parte através de um API scraper, através de uma biblioteca do Python chamada Investpy e scripts implementados por nós. Utilizamos tal scraper para capturar os países, moeda, nome de índices e suas pontuações históricas ao longo dos anos.
 
     Além disso, foi também feita uma extração manual de dados, para a coleta da planilha do GDP dos países listados no dataset.
 
-* integração de dados de múltiplas fontes
-* tratamento de dados
-* transformação de dados para facilitar análise e pesquisa: Foi feito a transformação dos dados do modelo relacional, armazenado em csv's, para o modelo de documentos, armazenado em json. Essa transformação foi feita no seguinte [notebook](notebooks/Montador_Hierarquico.ipynb).
+* Integração de dados de múltiplas fontes:
+    Realizamos a integração dos dados da Investing com a International Monetary Fund (IMF), através do relacionando dos índices financeiros com o PIB dos países.
+
+* Tratamento de dados:
+    Foi necessário um tratamento dos dados de PIB recebidos da International Monetary Fund (IMF), isso porque alguns países não possuíam o valor do PIB durante todo o período apurado (2015 a 2020). Realizamos a substituição desses dados faltante que continham o valor “...” para o valor null, assim tornando o campo PIB somente de valores numéricos ou nulos.
+
+* Transformação de dados para facilitar análise e pesquisa: 
+    Foi feito a transformação dos dados do modelo relacional, armazenado em csv's, para o modelo de documentos, armazenado em json. Essa transformação foi feita no seguinte [notebook](notebooks/Montador_Hierarquico.ipynb).
 
 ## Evolução do Projeto
 O primeiro modelo conceitual, foi construído com base na ideia inicial do dataset.
