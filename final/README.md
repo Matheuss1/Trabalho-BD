@@ -15,10 +15,10 @@ Esperamos que com o projeto aqui apresentado, sejam possíveis aplicações de a
 ## Slides da Apresentação
 [Slides](slides/apresentacao2.pdf)
 
-## Modelo Conceitual Preliminar
+## Modelo Conceitual
 ![Modelo Conceitual](assets/modelo_conceitual.png)
 
-## Modelos Lógicos Preliminares
+## Modelos Lógicos
 
 ### Modelos Relacional
 ~~~
@@ -35,11 +35,11 @@ Histórico_de_preços(_índice_, _ano_, _mês_, pontosAbertura,  pontosFechament
 ### Modelos Hierárquicos (XML e JSON)
 ![Modelo Documentos](assets/modelo_documentos_novo.png)
 
-## Dataset Preliminar a ser Publicado
+## Dataset a ser Publicado
 
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
-`INVB3` | [base](data/processed) | `<breve descrição do arquivo/base>`
+`INVB3` | [base](data/processed) | `Pasta contendo os dados em CSV do Dataset`
 
 
 ## Bases de Dados
@@ -121,7 +121,18 @@ print(som)
 ~~~
 
 #### Pergunta/Análise 4
-> * Pergunta 4
->   
->   * Explicação sucinta da análise que será feita e conjunto de queries que
->     responde à pergunta.
+* Quais países, obtiveram desempenho maior do que a média histórica do PIB, no ano de 2019?
+   * Para solucionar essa pergunta utilizaremos o valor da média histórica encontrada na Pergunta/Análise 3. Novamente utilizamos o MongoDB, retornando o nome dos países que atendem o requisito.
+~~~python
+b = countries.find(
+    { "years": {"$elemMatch":
+                { "year": 2019,
+                  "GDP": { "$gt": 244682543.798},
+                }
+            }
+    },
+    {'name.$': 1,"_id":0}
+)
+for i in b:
+  print(i)
+~~~
