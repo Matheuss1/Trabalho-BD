@@ -43,8 +43,6 @@ título do arquivo/base | link | breve descrição
 
 
 ## Bases de Dados
-> Elencar as bases de dados fonte utilizadas no projeto.
-
 título da base | link | breve descrição
 ----- | ----- | -----
 `<IMF - Gross Domestic Product>` | `https://data.imf.org/regular.aspx?key=63122827` | `Base de dados da International Monetary Fund, contendo o PIB de todos os paises`
@@ -95,10 +93,25 @@ Tal pergunta foi desenvolvida com o intuito de analisar o potencial de queries S
 
 Você pode encontrar o código de criação e manipulação do banco de dados SQL neste [notebook](notebooks/Consultas_Dataset.ipynb)
 
-#### Pergunta/Análise 3
-> * Pergunta 3
->   
->   * Explicação sucinta da análise que será feita e conjunto de queries que
->     responde à pergunta.
 
-> Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+##### As Perguntas/Análises 1 e 3 foram feitas utilizando o mesmo [notebook](notebooks/Mongodb.ipynb) em python usando a biblioteca [PyMongo](https://pymongo.readthedocs.io/en/stable/).
+
+#### Pergunta/Análise 3
+* Qual a média histórica (2015-2020) para o PIB de todos os países ?
+   * Para responder essa pergunta será preciso acessar vários valores de PIB, um para cada ano, para cada um dos países. A solução adotada foi utilizar o MongoDB para retornar todos os valores de PIB, independente do país e ano, soma-lós e dividir pela quantidade de valores.
+~~~python
+a = countries.find(
+    {},
+    {"years.GDP":1,"_id":0}
+)
+rep = 0
+som = 0
+for i in a:
+    for j in i['years']:
+        if(j):
+            if isinstance(j['GDP'],float):
+                som += j['GDP'] 
+        rep += 1
+som = som/rep
+print(som)
+~~~
