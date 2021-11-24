@@ -125,22 +125,3 @@ print(som)
 >   
 >   * Explicação sucinta da análise que será feita e conjunto de queries que
 >     responde à pergunta.
-
-### Perguntas/Análise Propostas mas Não Implementadas
-
-#### Pergunta/Análise 1
-> * Pergunta 1
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
-
-#### Pergunta/Análise 2
-> * Pergunta 2
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
-
-#### Pergunta/Análise 3
-> * Pergunta 3
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
-
-> Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
