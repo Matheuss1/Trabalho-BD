@@ -50,7 +50,11 @@ título da base | link | breve descrição
 
 ## Detalhamento do Projeto
 
-* extração de dados de fontes não estruturadas como, por exemplo, páginas Web
+* extração de dados:
+    A extração dos dados foi feita em sua maior parte através de um API scraper, através de uma biblioteca do Python chamada Investpy e scripts implementados por nós. Utilizamos tal scraper para capturar os países, moeda, nome de índices e suas pontuações históricas ao longo dos anos.
+
+    Além disso, foi também feita uma extração manual de dados, para a coleta da planilha do GDP dos países listados no dataset.
+
 * integração de dados de múltiplas fontes
 * tratamento de dados
 * transformação de dados para facilitar análise e pesquisa: Foi feito a transformação dos dados do modelo relacional, armazenado em csv's, para o modelo de documentos, armazenado em json. Essa transformação foi feita no seguinte [notebook](notebooks/Montador_Hierarquico.ipynb).
