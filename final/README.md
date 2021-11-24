@@ -94,7 +94,7 @@ Tal pergunta foi desenvolvida com o intuito de analisar o potencial de queries S
 Você pode encontrar o código de criação e manipulação do banco de dados SQL neste [notebook](notebooks/Consultas_Dataset.ipynb)
 
 
-##### As Perguntas/Análises 1 e 3 foram feitas utilizando o mesmo [notebook](notebooks/Mongodb.ipynb) em python usando a biblioteca [PyMongo](https://pymongo.readthedocs.io/en/stable/).
+##### As Perguntas/Análises 3 e 4 foram feitas utilizando o mesmo [notebook](notebooks/Mongodb.ipynb) em python usando a biblioteca [PyMongo](https://pymongo.readthedocs.io/en/stable/).
 
 #### Pergunta/Análise 3
 * Qual a média histórica (2015-2020) para o PIB de todos os países ?
@@ -115,3 +115,9 @@ for i in a:
 som = som/rep
 print(som)
 ~~~
+
+#### Pergunta/Análise 4
+> * Pergunta 4
+>   
+>   * Explicação sucinta da análise que será feita e conjunto de queries que
+>     responde à pergunta.
