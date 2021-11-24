@@ -52,14 +52,31 @@ título da base | link | breve descrição
 ----- | ----- | -----
 `<título da base>` | `<link para a página da base>` | `<breve descrição da base>`
 
-## Operações realizadas para a construção do dataset
+## Detalhamento do Projeto
+> Apresente aqui detalhes do processo de construção do dataset e análise. Nesta seção ou na seção de Perguntas podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
+> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
 
-> Coloque um link para o arquivo do notebook, programas ou workflows que executam as operações de construção do dataset:
+~~~python
+df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
+sns.set(color_codes=True);
+sns.distplot(df.Hemoglobin);
+plt.show();
+~~~
+
+> Se usar Orange para alguma análise, você pode apresentar uma captura do workflow, como o exemplo a seguir e descrevê-lo:
+![Workflow no Orange](images/orange-zombie-meals-prediction.png)
+
+> Coloque um link para o arquivo do notebook, programas ou workflows que executam as operações que você apresentar.
+
+> Aqui devem ser apresentadas as operações de construção do dataset:
 * extração de dados de fontes não estruturadas como, por exemplo, páginas Web
 * agregação de dados fragmentados obtidos a partir de API
 * integração de dados de múltiplas fontes
 * tratamento de dados
 * transformação de dados para facilitar análise e pesquisa
+
+> Se for notebook, ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src` (por exemplo, arquivos do Orange ou Cytoscape). Se as operações envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+
 
 ## Evolução do Projeto
 > Relatório de evolução, descrevendo as evoluções na modelagem do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas, modelos e recortes de mudanças são bem-vindos.
